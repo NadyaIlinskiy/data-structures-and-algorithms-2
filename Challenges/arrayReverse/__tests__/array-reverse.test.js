@@ -1,7 +1,7 @@
 'use strict';
 
 // Require the module we're testing
-const Rev = require("../array-reverse.js");
+const Rev = require('../array-reverse.js');
 
 describe('Reverse array via new array', () => {
   it('returnes reversed array - numbers', () => {
@@ -22,7 +22,7 @@ describe('Reverse array via new array', () => {
 
   it('returnes reversed array - strings', () => {
     let arr = ['one', 'two', 'three'];
-    let revArr = ['three', 'two', 'one']
+    let revArr = ['three', 'two', 'one'];
     let ar = Rev.aReverseViaNewArr(arr);
 
     expect(ar).toEqual(revArr);
@@ -48,7 +48,7 @@ describe('Reverce array in one cycle', () => {
 
   it('returnes reversed array - strings', () => {
     let arr = ['one', 'two', 'three'];
-    let revArr = ['three', 'two', 'one']
+    let revArr = ['three', 'two', 'one'];
     let ar = Rev.aReverseInOneCycle(arr);
 
     expect(ar).toEqual(revArr);
