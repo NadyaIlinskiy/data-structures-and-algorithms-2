@@ -9,7 +9,7 @@ module.exports = exports = {};
  */
 exports.insertShiftArray = (arr, val) => {
   arr.push(val);
-  for (let i = arr.length-1; i > (arr.length+1)/2; i--){
+  for (let i = arr.length-1; i > arr.length/2; i--){
     swap(arr, i, i-1);
   }
   return arr;
@@ -22,3 +22,18 @@ const swap = (arr, a, b) => {
   return arr;
 };
 
+exports.removeShiftArray = (arr) => {
+  //even
+  if (arr.length%2===0){
+    for (let i = (arr.length)/2; i < arr.length-1; i++){
+      swap(arr, i, i+1);
+    }
+  } else {
+  //odd
+    for (let i = (arr.length-1)/2; i < arr.length-1; i++){
+      swap(arr, i, i+1);
+    }
+  }
+  arr.pop();
+  return arr;
+};
