@@ -1,3 +1,5 @@
+#ignore failer reports
+report.*
 
 # Created by https://www.gitignore.io/api/vim,osx,linux,node
 db
