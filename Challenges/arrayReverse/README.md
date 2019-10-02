@@ -11,4 +11,5 @@ Write a function called reverseArray which takes an array as an argument. Withou
 ## Solution
 
 ![solution](/assets/reverse-array.jpg)
+![solution](/assets/reverse-array2.jpg)
 
