@@ -6,9 +6,10 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Approach & Efficiency
 
-* Approach implemented in incertShift function is efficient as it only reqires one cycle and incer and shift given array in place in two steps:
+* Approach implemented in incertShift function is efficient as it only reqires one cycle and incert and shift given array in place in two steps:
     1. Adding new element to the end of the array via .push js funciton
-    2. Starting from the last element of the array function iterates swapping elements of the array in place until it reaches given index (in this case (arr.length+1)/2). 
+    2. Starting from the last element of the array function iterates swapping elements of the array in place until it reaches given index (in this case (arr.length)/2). 
+* There's helper funciton swap implemented in spirit of functional programming to make mane function cleaner.
 
 ## Solution
 
