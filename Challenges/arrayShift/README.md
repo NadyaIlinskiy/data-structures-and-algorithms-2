@@ -15,6 +15,4 @@ Shift an Array with Java Script
 
 ## Solution
 
-![solution for insertShiftArray](/assets/array-shift.jpg)
-![solution for removeShiftArray](/assets/array-shift2.jpg)
-
+![solution for insertShiftArray](/assets/shift-array.jpg)
