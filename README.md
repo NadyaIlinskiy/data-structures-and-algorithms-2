@@ -4,6 +4,8 @@
 ### Challenges
 * [Array-reverse](Challenges/arrayReverse/README.md)
 * [Array-shift](Challenges/arrayShift/README.md)
+* [Array-binary-search](Challenges/arrayBinarySearch/README.md)
+* 
 
 ### Data Structures
 * 
