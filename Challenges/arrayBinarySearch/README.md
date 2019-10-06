@@ -1,7 +1,7 @@
 # Array binary search
 Array binary search with Java Script
 
-![Travis link ](https://travis-ci.com/NadyaIlinskiy/data-structures-and-algorithms-2 )
+[Travis link ](https://travis-ci.com/NadyaIlinskiy/data-structures-and-algorithms-2 )
 (To verify there'is no linter errors).
 
 
