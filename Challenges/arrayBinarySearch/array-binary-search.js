@@ -2,12 +2,7 @@
 
 module.exports = exports = {};
 
-const test1 = [4,8,15,16,23,9, 15];
-const input1 = 15;
-const test2 = [11,22,33,44,55,66,77];
-const input2 = 90;
-
-function returnKey(arr,search) {
+exports.aBinarySearch = (arr,search) => {
   //check if middle index matches key
   let firstIndex = 0;
   let lastIndex = arr.length - 1;
@@ -29,10 +24,4 @@ function returnKey(arr,search) {
     }
   }
   return -1;
-}
-
-
-console.log(returnKey(test2, 22));
-console.log(returnKey(test2, 66));
-console.log(returnKey(test2, 9));
-console.log(returnKey(test1, 289));
+};
