@@ -8,7 +8,9 @@ module.exports = exports = {};
  * @returns array with vakue added to the middle index
  */
 exports.insertShiftArray = (arr, val) => {
-  arr.push(val);
+  // arr.push(val);
+  arr[arr.length] = val;
+
   for (let i = arr.length-1; i > arr.length/2; i--){
     swap(arr, i, i-1);
   }
@@ -34,6 +36,7 @@ exports.removeShiftArray = (arr) => {
       swap(arr, i, i+1);
     }
   }
-  arr.pop();
+  //arr.pop();
+  arr.length = arr.length-1;
   return arr;
 };
