@@ -20,6 +20,7 @@ class LinkedList {
       this.head = newHead;
     }
   }
+
   includes(val){
     if (this.head == null){ // === returnes underfined. What's the right way to go?
       return false; 
@@ -43,6 +44,48 @@ class LinkedList {
       return arr.toString();
     }
   }
+  append (val){
+    if(this.head == null){
+      this.head = new Node(val);
+    } else{
+      let iter = this.head;
+      for ( ; iter.next != null; iter = iter.next);
+      iter.next = new Node(val);
+    }
+  }
+  insertBefore(val, newVal){
+    if(this.head == null){
+      console.log('Error');
+    } else{
+      let iter = this.head;
+      for ( ; iter.next != null&&iter.next.data!=val; iter = iter.next);
+      if(iter.next==null){
+        console.log('Error');
+      }else{
+        let newNode = new Node(newVal);
+        newNode.next = iter.next;
+        iter.next = newNode;
+      }     
+    }
+  }
+  insertAfter(val, newVal){
+    if(this.head == null){
+      console.log('Error');
+    } else{
+      let iter = this.head;
+      for ( ; iter != null&&iter.data!=val; iter = iter.next);
+      if(iter==null){
+        console.log('Error');
+      }else{
+        let newNode = new Node(newVal);
+        newNode.next = iter.next;
+        iter.next = newNode;
+      }     
+    }
+  }
+
 }
+
+
 
 module.exports = LinkedList;

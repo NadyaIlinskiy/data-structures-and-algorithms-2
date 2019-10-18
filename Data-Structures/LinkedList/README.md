@@ -11,7 +11,11 @@ Implement a Singly Linked List
 * * A function called insert which takes in a value. This function will then create a new Node object, sets the object’s data property equal to the value. The function then appends this new Node object to the beginning of the linked list (i.e. it sets a new head)
 * * A function called includes which takes in a value and returns a boolean if that value exists in the linked list
 * * A function called toString whcih takes in no arguments and returns a string representing all the values in the linked list
-* * Implement good error checking throughout your code. C
+* * A function called append which adds a Node to the end of the list
+* * A function called insertBefore which adds a Node before a certain Node in the list
+* * A function called insertAfter which adds a Node after a certain Node in the list
+* * Implement good error checking throughout your code. 
+
 
 ## Approach & Efficiency
 There're three methods implemented in the class LinkedList:
@@ -21,6 +25,12 @@ O(1)
 * includes();
 O(n)
 * toString();
+O(n)
+* Append()
+O(n)
+* insertBefore()
+O(n)
+* incertAfter()
 O(n)
 
 ## Solution
