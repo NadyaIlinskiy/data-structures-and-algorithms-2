@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
-## 401 JavaScript
+## 401 JavaScript|
 
 ### Challenges
 * [Array-reverse](Challenges/arrayReverse/README.md)
