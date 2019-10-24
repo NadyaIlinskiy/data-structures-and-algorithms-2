@@ -52,6 +52,7 @@ class LinkedList {
       for ( ; iter.next != null; iter = iter.next);
       iter.next = new Node(val);
     }
+    return this;
   }
   insertBefore(val, newVal){
     if(this.head == null){
