@@ -29,7 +29,7 @@ const mergeLists = (list1, list2) => {
     glist.append(iter.data);
     iter = iter.next;
   }
-  return glist.head;
+  return glist;
 };
 
 module.exports = mergeLists;

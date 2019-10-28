@@ -1,5 +1,18 @@
 'use strict';
 
+
+const printNodeSeq = (node) => {
+  if (node == null) {
+    return '';
+  } else {
+    let arr = [];
+    for (let iter = node; iter != null; iter = iter.next) {
+      arr.push(iter.data);
+    }
+    return arr.toString();
+  }
+};
+
 class Node {
   constructor(data) {
     this.data = data;
@@ -7,16 +20,15 @@ class Node {
   }
 }
 
-
 class LinkedList {
   constructor(){
     this.head = null;
   }
   insert (val){
     if(this.head == null){
-      this.head = new Node(val);
+      this.head = new Node(data);
     } else{
-      let newHead = new Node(val);
+      let newHead = new Node(data);
       newHead.next = this.head;
       this.head = newHead;
     }
@@ -55,7 +67,6 @@ class LinkedList {
     }
     return this;
   }
-
   insertBefore(val, newVal){
     if(this.head == null){
       console.log('Error');
@@ -108,7 +119,11 @@ class LinkedList {
     }
     return iter2.data;
   }
-  
+  print() {
+    return printNodeSeq(this.head);
+  }
 }
+
+
 
 module.exports = LinkedList;

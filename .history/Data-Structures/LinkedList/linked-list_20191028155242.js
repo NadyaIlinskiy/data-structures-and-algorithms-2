@@ -7,9 +7,8 @@ class Node {
   }
 }
 
-
 class LinkedList {
-  constructor(){
+  construcor(){
     this.head = null;
   }
   insert (val){
@@ -55,7 +54,6 @@ class LinkedList {
     }
     return this;
   }
-
   insertBefore(val, newVal){
     if(this.head == null){
       console.log('Error');
@@ -108,7 +106,8 @@ class LinkedList {
     }
     return iter2.data;
   }
-  
 }
+
+
 
 module.exports = LinkedList;

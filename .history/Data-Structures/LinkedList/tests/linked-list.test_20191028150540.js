@@ -3,7 +3,7 @@
 // Require the module we're testing
 const LinkedList = require('../linked-list.js');
 
-describe('Performs insert, includes and toString actions on Linked List correctly', () => {
+describe('Performes incert, includes and toString actions on Linked List correctly', () => {
   let ls =  new LinkedList();
 
   it('can successfully instantiate an empty linked list ', () => {
