@@ -8,7 +8,7 @@ class Node {
 }
 
 class LinkedList {
-  construcor(){
+  constructor(){
     this.head = null;
   }
   insert (val){
