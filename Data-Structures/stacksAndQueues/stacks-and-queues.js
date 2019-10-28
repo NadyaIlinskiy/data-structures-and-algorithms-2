@@ -7,12 +7,12 @@ class Node {
   }
 }
 const printNodeSeq = (node) => {
-  if(!node){
+  if (node == null){
     return '';
-  } else {
+  }else{
     let arr = [];
-    for(let iter = node; iter; iter = iter.next){
-      arr.push(iter.velue);
+    for (let iter = node; iter !=null; iter = iter.next){
+      arr.push(iter.value);
     }
     return arr.toString();
   }
@@ -88,4 +88,5 @@ class Queue {
   }
 
 }
+
 module.exports = Stack;
