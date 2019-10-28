@@ -73,19 +73,19 @@ describe('Performs Queue manipulations', () => {
   });
   it('Can successfully peek into a queue, seeing the expected value ', () => {  
     let result = qu.peek();
-    expect(result).toEqual(4);
+    expect(result).toEqual('4');
   });
   it('Can successfully empty a queue after multiple dequeues ', () => {
     qu.dequeue();
     qu.dequeue();
     qu.dequeue();
     let result = qu.print();
-    expect(result).toEqual('');
+    expect(result).toEqual(null);
   });
   it('Can successfully instantiate an empty queue ', () => {
     const qu = new Queue();
     let result = qu.print();
-    expect(result).toEqual('');
+    expect(result).toEqual(null);
   });
 
 }); 

@@ -85,7 +85,7 @@ describe('Performs Queue manipulations', () => {
   it('Can successfully instantiate an empty queue ', () => {
     const qu = new Queue();
     let result = qu.print();
-    expect(result).toEqual('');
+    expect(result).toEqual(null);
   });
 
 }); 

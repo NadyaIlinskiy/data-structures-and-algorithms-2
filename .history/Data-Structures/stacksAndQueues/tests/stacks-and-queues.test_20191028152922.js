@@ -53,39 +53,10 @@ describe('Performs Stack manipulations', () => {
 
 describe('Performs Queue manipulations', () => {
   const qu = new Queue();
-  it('Can successfully enqueue into a queue ', () => {
-    qu.enqueue(3);
-    let result = qu.print();
-    expect(result).toEqual('3');
-  });
-  it('Can successfully enqueue multiple values into a queue ', () => {
-    qu.enqueue(4);
-    qu.enqueue(5);
-    qu.enqueue(6);
-    let result = qu.print();
-    expect(result).toEqual('3,4,5,6');
-  });
+  it('can successfully push onto a stack ', () => {
+    st.push(4);
+    let result = st.print();
+    expect(result).toEqual('4');
 
-  it('Can successfully dequeue out of a queue the expected value ', () => {
-    qu.dequeue();
-    let result = qu.print();
-    expect(result).toEqual('4,5,6');
   });
-  it('Can successfully peek into a queue, seeing the expected value ', () => {  
-    let result = qu.peek();
-    expect(result).toEqual(4);
-  });
-  it('Can successfully empty a queue after multiple dequeues ', () => {
-    qu.dequeue();
-    qu.dequeue();
-    qu.dequeue();
-    let result = qu.print();
-    expect(result).toEqual('');
-  });
-  it('Can successfully instantiate an empty queue ', () => {
-    const qu = new Queue();
-    let result = qu.print();
-    expect(result).toEqual('');
-  });
-
 }); 

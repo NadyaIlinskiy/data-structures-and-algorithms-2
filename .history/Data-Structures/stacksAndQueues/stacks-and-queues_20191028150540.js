@@ -48,7 +48,6 @@ class Stack {
       return this.top.value;
     }
   }
-
   print(){
     return printNodeSeq (this.top);
   }
@@ -90,4 +89,4 @@ class Queue {
 
 }
 
-module.exports = { Stack, Queue };
+module.exports = Stack;
