@@ -45,7 +45,7 @@ describe('Merges the two lists', () => {
     let list2 = new LinkedList();
     list2.append(2).append(4);
     let result = llMerge(list1, list2);
-    expect(printNodeSeq(result)).toEqual('1,2,3,4,5');
+    expect(printNodeSeq(result)).toEqual('1,2,3,4');
   });
 
   it('can successfully merge two lists where list1  is null', () => {
@@ -57,15 +57,6 @@ describe('Merges the two lists', () => {
     expect(printNodeSeq(result)).toEqual('2,4');
   });
  
-  it('can successfully merge two lists where list1 and list2 are of length 1', () => {
-
-    let list1 = new LinkedList();
-    list1.append(1);
-    let list2 = new LinkedList();
-    list2.append(2);
-    let result = llMerge(list1, list2);
-    expect(printNodeSeq(result)).toEqual('1,2');
-  });
-
+  
 
 });

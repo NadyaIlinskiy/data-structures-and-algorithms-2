@@ -38,34 +38,14 @@ describe('Merges the two lists', () => {
     expect(printNodeSeq(result)).toEqual('1,2,3,4,6');
   });
 
-  it('can successfully merge two lists where list1 is longer than list2 ', () => {
+  it('can successfully merge two lists where list1 is shorter than list2 ', () => {
 
     let list1 = new LinkedList();
-    list1.append(1).append(3).append(5);
+    list1.append(1).append(3);
     let list2 = new LinkedList();
-    list2.append(2).append(4);
+    list2.append(2).append(4).append(6);
     let result = llMerge(list1, list2);
-    expect(printNodeSeq(result)).toEqual('1,2,3,4,5');
+    expect(printNodeSeq(result)).toEqual('1,2,3,4,6');
   });
-
-  it('can successfully merge two lists where list1  is null', () => {
-
-    let list1 = new LinkedList();
-    let list2 = new LinkedList();
-    list2.append(2).append(4);
-    let result = llMerge(list1, list2);
-    expect(printNodeSeq(result)).toEqual('2,4');
-  });
- 
-  it('can successfully merge two lists where list1 and list2 are of length 1', () => {
-
-    let list1 = new LinkedList();
-    list1.append(1);
-    let list2 = new LinkedList();
-    list2.append(2);
-    let result = llMerge(list1, list2);
-    expect(printNodeSeq(result)).toEqual('1,2');
-  });
-
 
 });

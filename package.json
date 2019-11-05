@@ -16,7 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2.git"
   },
-  "author": "nadya",
+
+  "author": "Nadya Ilinskaya",
+
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/issues"

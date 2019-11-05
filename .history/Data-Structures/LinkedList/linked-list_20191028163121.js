@@ -55,7 +55,7 @@ class LinkedList {
     }
     return this;
   }
-
+  
   insertBefore(val, newVal){
     if(this.head == null){
       console.log('Error');
@@ -110,5 +110,7 @@ class LinkedList {
   }
   
 }
+
+
 
 module.exports = LinkedList;

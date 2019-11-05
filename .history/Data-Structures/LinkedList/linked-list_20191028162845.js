@@ -7,6 +7,17 @@ class Node {
   }
 }
 
+const printNodeSeq = (node) => {
+  if (node == null) {
+    return '';
+  } else {
+    let arr = [];
+    for (let iter = node; iter != null; iter = iter.next) {
+      arr.push(iter.data);
+    }
+    return arr.toString();
+  }
+};
 
 class LinkedList {
   constructor(){
@@ -55,7 +66,9 @@ class LinkedList {
     }
     return this;
   }
-
+  print() {
+    return printNodeSeq(this.head);
+  }
   insertBefore(val, newVal){
     if(this.head == null){
       console.log('Error');
@@ -111,4 +124,6 @@ class LinkedList {
   
 }
 
-module.exports = LinkedList;
+
+
+module.exports = { LinkedList, printNodeSeq };
