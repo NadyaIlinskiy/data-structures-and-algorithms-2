@@ -83,7 +83,28 @@ class LinkedList {
       }     
     }
   }
-
+  kthFromEnd(k){
+    if(k<=0||!this.head){
+      console.log('k is negative or LL is empty');
+      return null;
+    }
+    let iter1 = this.head;
+    let stepsCount = 0;
+    while(stepsCount < k && !!iter1){
+      iter1 = iter1.next;
+      stepsCount+=1;
+    }
+    if(stepsCount < k){
+      console.log('k greater then LL length');
+      return null;   
+    }
+    let iter2 = this.head; //starting second iterator
+    while(iter1){
+      iter1 = iter1.next;
+      iter2 = iter2.next;
+    }
+    return iter2.data;
+  }
 }
 
 

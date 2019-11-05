@@ -58,9 +58,29 @@ describe('Performes incert, includes and toString actions on Linked List correct
     ls.insertAfter(1, 13);
     expect(ls.toString()).toEqual('9,7,3,4,5');
   });
-
-
-
+  //k
+  it('Returns null if k is greater than the length of the linked list', () => {
+    let res = ls.kthFromEnd(6);  
+    expect(res).toBeFalsy();
+  });
+  it('Returns null if k and the length of the list are the same', () => {
+    let res = ls.kthFromEnd(5);  
+    expect(res).toEqual(9);
+  });
+  it('Returns null if k is not a positive integer', () => {
+    let res = ls.kthFromEnd(-6);  
+    expect(res).toBeFalsy();
+  });
+  it('Returns head if the linked list is of a size 1', () => {
+    let ls = new LinkedList();
+    ls.insert(2);
+    let res = ls.kthFromEnd(1);  
+    expect(res).toEqual(2);
+  });
+  it('Returns kth node value if k is not at the end, but somewhere in the middle of the linked list', () => {
+    let res = ls.kthFromEnd(2);  
+    expect(res).toEqual(4);
+  });
 
 });
 
