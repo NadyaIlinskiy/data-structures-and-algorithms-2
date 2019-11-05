@@ -37,6 +37,30 @@ describe('Performes incert, includes and toString actions on Linked List correct
   it('The head property will properly point to the first node in the linked list', () => {
     expect(ls.head.data).toEqual(9);
   });
+  it('Can successfully insert a node after the last node of the linked list', () => {
+    ls.append(5);
+    expect(ls.toString()).toEqual('9,4,5');
+  });
+  it('Can successfully insert a node before the first node of a linked list', () => {
+    ls.insertBefore(4, 3);
+    expect(ls.toString()).toEqual('9,3,4,5');
+  });
+  it('Can successfully insert after a node in the middle of the linked list', () => {
+    ls.insertAfter(9, 7);
+    expect(ls.toString()).toEqual('9,7,3,4,5');
+  });
+
+  it('List is not modified if element does not exists in the List', () => {
+    ls.insertBefore(1, 13);
+    expect(ls.toString()).toEqual('9,7,3,4,5');
+  });
+  it('List is not modified if element does not exists in the List', () => {
+    ls.insertAfter(1, 13);
+    expect(ls.toString()).toEqual('9,7,3,4,5');
+  });
+
+
+
 
 });
 
