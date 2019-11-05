@@ -1,4 +1,4 @@
-#ignore failer reports
+.history
 report.*
 
 # Created by https://www.gitignore.io/api/vim,osx,linux,node
