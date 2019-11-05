@@ -7,7 +7,6 @@ class Node {
   }
 }
 
-
 class LinkedList {
   constructor(){
     this.head = null;
@@ -55,7 +54,9 @@ class LinkedList {
     }
     return this;
   }
-
+  print() {
+    return printNodeSeq(this.head);
+  }
   insertBefore(val, newVal){
     if(this.head == null){
       console.log('Error');
@@ -111,4 +112,6 @@ class LinkedList {
   
 }
 
-module.exports = LinkedList;
+
+
+module.exports = { LinkedList, printNodeSeq };
