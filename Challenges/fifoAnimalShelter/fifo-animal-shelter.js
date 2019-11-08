@@ -1,29 +1,96 @@
 'use strict';
 
 class Animal {
-    constructor(name) {
-        this.speed = 0;
-        this.name = name;
-    }
-    run(speed) {
-        this.speed += speed;
-        alert(`${this.name} runs with speed ${this.speed}.`);
-    }
-    stop() {
-        this.speed = 0;
-        alert(`${this.name} stands still.`);
-    }
+  constructor(name) {
+    this.name = name;
+  }
+  print() {
+    return `${this.name} is cute animal!`;
+  }
 }
 
-let animal = new Animal("My animal");
-
-class Rabbit extends Animal {
-    hide() {
-        alert(`${this.name} hides!`);
-    }
+class Cat extends Animal {
+  print() {
+    return `${this.name} is sweet cat!`;
+  }
+}
+class Dog extends Animal {
+  print() {
+    return `${this.name} is good dog!`;
+  }
 }
 
-let rabbit = new Rabbit("White Rabbit");
+class Node {
+  constructor(animal) {
+    this.animal = animal;
+    this.next = null;
+  }
+}
 
-rabbit.run(5); // White Rabbit runs with speed 5.
-rabbit.hide(); // White Rabbit hides!
+class AnimalShelter {
+  constructor(){
+    this.front = null;
+    this.rear = null;
+  }
+  enqueue(animal){
+    if(!(animal instanceof Animal)){
+      throw new Error('not an animal!');
+    }
+    if(!this.front){
+      this.front = new Node(animal);
+      this.rear = this.front;
+    }else{
+      this.rear.next = new Node (animal);
+      this.rear = this.rear.next;
+    }
+  }
+  dequeue(pref){
+    if(!this.front){
+      return null;
+    }else if (isIt(this.front.animal, pref)){
+      let exFrontAnimal = this.front.animal;
+      this.front = this.front.next;
+      return exFrontAnimal;
+    }   
+    else {
+      let iter = this.front;
+      while(iter.next && !isIt(iter.next.animal, pref)){
+        iter = iter.next;
+      } 
+      if(!iter.next){
+        return null;
+      }
+      let exFrontAnimal = iter.next.animal;
+      iter.next = iter.next.next;
+      if(!iter.next){
+        this.rear = iter;
+      }
+      return exFrontAnimal;
+    }
+  }
+}
+
+const isIt = (instance, pref)=> {
+  if (pref === ''){
+    return true;
+  }
+  if(instance instanceof Dog){
+    if(pref === 'dog'){
+      return true;
+    }
+    if(pref === 'cat'){
+      return false;
+    }
+  }
+  if(instance instanceof Cat){
+    if(pref === 'cat'){
+      return true;
+    }
+    if(pref === 'dog'){
+      return false;
+    }
+  }
+  return false;
+};
+
+module.exports = { AnimalShelter, Cat, Dog, Animal };
