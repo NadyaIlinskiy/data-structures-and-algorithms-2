@@ -1,17 +1,23 @@
-# Shift an Array
-Shift an Array with Java Script
+# Fifo Animal Shelter 
+ build a Queue that represents an animal shelter
 
 ## Challenge
-* Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
-* Write a second function that removes an element from the middle index and shifts other elements in the array to fill the new gap.
+* Create a `Dog` and `Cat` class. These classes should share the following properties:
+    * `name:` a string representing the name of this animal
+    * `print()`: a function that prints
+        * `${name}` is a good dog! if this is a Dog object
+        * `${name}` is a sweet cat! if this is a Cat object
+* Create a Queue class called `AnimalShelter` which holds only `Dogs` and `Cats`
+    * Add a function `enqueue(animal)` which adds the specified `Dog` or `Cat` object into the shelter
+    * Add a function `dequeue(pref)` which dequeues either the first `Dog` or the first `Cat` object in the queue, depending on what pref is (pref may be a string that is either empty, `'cat'` or `'dog'`)
+        * If `pref` is an empty string, dequeue the first animal in the queue, regardless of if it’s a Dog or Cat
+        * After you dequeue, call the print function on the dequeued object
 
 ## Approach & Efficiency
+Implemented per requirments 
+* `enqueue(animal)`  - O(1)
+* `dequeue(pref)` - O(n)
 
-* Approach implemented in incertShift function is efficient as it only reqires one cycle and incert and shift given array in place in two steps:
-    1. Adding new element to the end of the array via .push js funciton
-    2. Starting from the last element of the array function iterates swapping elements of the array in place until it reaches given index (in this case (arr.length)/2 works for both kind of array - with even & odd number of values). 
-* There's helper funciton swap implemented in spirit of functional programming to make main function cleaner.
-* Similar approch used in removeShiftArray function (reverced incertShift) - in this case I've implemented is / else statment to accomodate arrays with odd & even numbers of values. 
 
 ## Solution
 
