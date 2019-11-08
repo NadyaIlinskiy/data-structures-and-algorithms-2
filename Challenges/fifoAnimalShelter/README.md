@@ -21,4 +21,4 @@ Implemented per requirments
 
 ## Solution
 
-![solution for insertShiftArray](/assets/shift-array.jpg)
+![approach to implementation of Animal Shelter and solution for decueue method](/assets/shelter.jpg)
