@@ -11,3 +11,4 @@
 * [Linked-List](Data-Structures/LinkedList/README.md)
 * [Stacks and Queues](Data-Structures/stacksAndQueues/README.md)
 * [Queue with Stacks](Data-Structures/queueWithStacks/README.md)
+* [Tree]((Data-Structures/tree/README.md))
