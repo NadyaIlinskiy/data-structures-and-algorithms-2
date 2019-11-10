@@ -16,14 +16,16 @@
     "type": "git",
     "url": "git+https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2.git"
   },
-  "author": "",
+
+  "author": "Nadya Ilinskaya",
+
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/issues"
   },
   "homepage": "https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2#readme",
   "dependencies": {
-    "eslint": "^6.5.0",
+    "eslint": "^6.6.0",
     "jest": "^24.9.0"
   }
 }
