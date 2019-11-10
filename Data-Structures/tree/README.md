@@ -2,10 +2,10 @@
 Implement a Tree Data Structure
 
 ## Challenge
-Create a Node class that has properties for the value stored in the node, the left child Node, and the right child Node.
+Create a `Node` class that has properties for the `value` stored in the node, the `left` child `Node`, and the `right` child `Node`.
 
 ### Binary Tree
-Create a BinaryTree class with the following defined properties and methods:
+Create a `BinaryTree` class with the following defined properties and methods:
 
 * A `root` property that stores a Node representing the start of the tree
 * A `preOrder` method that traverses the tree using the pattern root >> left >> right and returns an array of the traversed values
