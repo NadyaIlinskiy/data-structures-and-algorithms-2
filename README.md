@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
-## 401 JavaScript|
+## 401 JavaScript
 
 [Travis-ci link](https://travis-ci.com/NadyaIlinskiy/data-structures-and-algorithms-2)
 
