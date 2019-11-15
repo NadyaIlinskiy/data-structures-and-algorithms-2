@@ -16,4 +16,4 @@ On your main file, create a function called multiBracketValidation(input). Your 
 
 ## Solution
 
-![solution for insertShiftArray](/assets/multi-bracket-validation.jpg)
+![solution](/assets/multi-bracket-validation.jpg)
