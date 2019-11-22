@@ -1,4 +1,5 @@
 'use strict';
+// eslint-disable-next-line no-unused-vars
 const {Stack, Queue} = require('../stacksAndQueues/stacks-and-queues.js');
 
 class  PseudoQueue{
