@@ -22,7 +22,7 @@ const FizzBuzzTreeRec = (node)=> {
   }   
 };
 
-const FizzBuzzTree = (tree)=> {
+const FizzBuzzTree = (tree) => {
   if(tree.root){
     FizzBuzzTreeRec(tree.root);
     return tree;
