@@ -1,8 +1,8 @@
 # “FizzBuzz” on a tree 
 Conduct “FizzBuzz” on a tree while traversing through it. Change the values of each of the nodes dependent on the current node’s value.
 
-[Pull Request](https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/pull/18)
-[Travis-CI](https://travis-ci.com/NadyaIlinskiy/data-structures-and-algorithms-2)
+* [Pull Request](https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/pull/18)
+* [Travis-CI](https://travis-ci.com/NadyaIlinskiy/data-structures-and-algorithms-2)
 
 
 ## Challenge
