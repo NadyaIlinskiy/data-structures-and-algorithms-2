@@ -1,7 +1,8 @@
 'use strict';
 
 // Require the module we're testing
-const BSTree = require('../tree.js');
+const Tree = require('../tree.js');
+const BSTree = Tree.BSTree;
 
 describe('Performs Tree manipulations', () => {
   
