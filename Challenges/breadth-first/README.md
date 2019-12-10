@@ -1,6 +1,8 @@
 # breadth-first traversal
 Implement breadth-first traversal
 
+[PR LINK](https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/pull/19)
+
 ## Challenge
 * Write a breadth first traversal method which takes a Binary Tree as its unique input.
 Traverse the input tree using a breadth-first approach; print every visited node’s value.
