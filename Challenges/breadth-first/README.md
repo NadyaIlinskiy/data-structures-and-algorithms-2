@@ -6,13 +6,13 @@ Implement breadth-first traversal
 Traverse the input tree using a breadth-first approach; print every visited node’s value.
 
 ## Approach & Efficiency
-
-*  `bfs_tree()` utilizing implemented earlier class Queue and it's methods:
-* enqueue()
+ 
+ `bfs_tree()` utilizing implemented earlier class Queue and it's methods:
+* enqueue() - 
 O(1)
-* dequeue(()
+* dequeue() - 
 O(1)
-* peek()
+* peek() - 
 O(1) 
 
 ## Solution
