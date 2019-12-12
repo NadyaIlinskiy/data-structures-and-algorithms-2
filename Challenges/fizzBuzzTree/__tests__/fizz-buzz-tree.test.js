@@ -2,7 +2,8 @@
 
 // Require the module we're testing
 const FBT = require('../fizz-buzz-tree.js');
-const BSTree = require('../../../Data-Structures/tree/tree.js');
+const Tree = require('../../../Data-Structures/tree/tree.js');
+const BSTree = Tree.BSTree;
 
 // Incorrect parameter
 // Tree with only one Node
