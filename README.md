@@ -9,6 +9,7 @@
 * [Array-binary-search](Challenges/arrayBinarySearch/README.md)
 * [Fifo Animal Shelter ](Challenges/fifoAnimalShelter/README.md)
 * [FBreadth First ](Challenges/breadth-first/README.md)
+* [FindMaximumBinaryTree ](Challenges/findMaximumBinaryTree/README.md)
 
 ### Data Structures
 * [Linked-List](Data-Structures/LinkedList/README.md)

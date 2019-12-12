@@ -10,3 +10,5 @@ class findMaximumBinaryTree extends BinaryTree{
     return Math.max(...treeValues); 
   }
 }
+
+module.exports = findMaximumBinaryTree;
