@@ -1,5 +1,5 @@
 # findMaximumBinaryTree
-Implement breadth-first traversal
+Implement findMaximumBinaryTree class 
 
 [PR LINK](https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/pull/20)
 
@@ -14,5 +14,7 @@ Implement breadth-first traversal
 Efficiency - O(n) as it's going though every Node
 
 ## Solution
-
-![solution for insertShiftArray](/assets/findMaximumBinaryTree.jpg)
+Solution utilizing previously implemented functionality ->  breadth-first method, which returns an array of values. 
+FindMaximum method on findMaximumBinaryTree class just grabbing max value from an array, which is trivial task with or without utilizing build-in functions.
+Algorithm on pic below shows breadth-first solution.
+![solution for insertShiftArray](/assets/breadth-first.jpg)
