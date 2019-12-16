@@ -1,6 +1,6 @@
 # Insertion Sort
 
-[Pull request](https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/pull/17/)
+[Pull request](https://github.com/NadyaIlinskiy/data-structures-and-algorithms-2/pull/20/)
 
 ## Challenge
 Write a function called insertionSort, which takes an array of numbers and returns a sorted array
