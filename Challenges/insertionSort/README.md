@@ -8,7 +8,7 @@ after using the Insertion Sort algorithm. Do not mutate (change) the array given
 
 ## Approach & Efficiency
 
-* Approach implemented in isertionSort function reqires two cycles. 
+* Approach implemented in isertionSort function requires two cycles. 
     * Time efficiency - O(n^2)
 
 ## Solution
