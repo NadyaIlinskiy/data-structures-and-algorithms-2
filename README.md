@@ -12,6 +12,7 @@
 * [Fifo Animal Shelter ](Challenges/fifoAnimalShelter/README.md)
 * [FBreadth First ](Challenges/breadth-first/README.md)
 * [Insertion Sort ](Challenges/insertionSort/README.md)
+* [FindMaximumBinaryTree ](Challenges/findMaximumBinaryTree/README.md)
 
 
 ### Data Structures
