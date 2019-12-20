@@ -11,6 +11,7 @@
 * [multi-bracket-validation](Challenges/multiBracketValidation/README.md)
 * [Fifo Animal Shelter ](Challenges/fifoAnimalShelter/README.md)
 * [FBreadth First ](Challenges/breadth-first/README.md)
+* [FindMaximumBinaryTree ](Challenges/findMaximumBinaryTree/README.md)
 
 
 ### Data Structures
