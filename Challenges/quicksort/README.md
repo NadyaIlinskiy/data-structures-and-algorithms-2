@@ -10,6 +10,5 @@ Write a function called quickSort, which takes an array of numbers and returns a
 
 ## Solution
 
-![solution - 1](/assets/quick-sort1.jpg)
-![solution - 2](/assets/quick-sort2.jpg)
+![solution](/assets/quick-sort.jpg)
 
