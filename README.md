@@ -11,9 +11,11 @@
 * [multi-bracket-validation](Challenges/multiBracketValidation/README.md)
 * [Fifo Animal Shelter ](Challenges/fifoAnimalShelter/README.md)
 * [FBreadth First ](Challenges/breadth-first/README.md)
-* [Merge Sort ](Challenges/merge-sort/README.md)
-* [Insertion Sort ](Challenges/insertionSort/README.md)
 * [FindMaximumBinaryTree ](Challenges/findMaximumBinaryTree/README.md)
+* [Insertion Sort ](Challenges/insertionSort/README.md)
+* [Merge Sort ](Challenges/merge-sort/README.md)
+* [Quick Sort ](Challenges/quicksort/README.md)
+
 
 ### Data Structures
 * [Linked-List](Data-Structures/LinkedList/README.md)
