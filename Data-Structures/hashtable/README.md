@@ -9,6 +9,8 @@ Implement a HashTable Data Structure
     * `contains`: takes in the key and returns a boolean, indicating if the key exists in the table already.
     * `hash`: takes in an arbitrary key and returns an index in the collection.
 
+## Links
+Hashing function inspired by this article [Algorithms in JavaScript: Hash Tables](https://medium.com/javascript-in-plain-english/algorithm-in-javascript-hash-table-7b0464d2b81b) 
 
 ## Approach & Efficiency
 There're three methods implemented in the class LinkedList:
