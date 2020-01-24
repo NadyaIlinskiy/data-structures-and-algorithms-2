@@ -49,7 +49,7 @@ describe('Finds tree intersection', () => {
     bt2.add(2);
     bt2.add(3);
     let result = TI.tree_intersection(bt1, bt2);
-    expect(result).toEqual(["1","2","3"]); 
+    expect(result).toEqual(['1','2','3']); 
   });
 
 });

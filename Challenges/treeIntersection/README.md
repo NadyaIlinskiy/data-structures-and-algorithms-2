@@ -8,7 +8,7 @@
 
 
 ## Approach & Efficiency
-* O(log n) 
+* O(n) 
 
 ## Solution
 
