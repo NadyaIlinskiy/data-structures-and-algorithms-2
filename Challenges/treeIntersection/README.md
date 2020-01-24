@@ -12,5 +12,5 @@
 
 ## Solution
 
-![solution](/assets/quick-sort.jpg)
+![solution](/assets/tree_intersection.jpg)
 
