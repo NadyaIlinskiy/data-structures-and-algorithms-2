@@ -15,12 +15,8 @@
 * [Insertion Sort ](Challenges/insertionSort/README.md)
 * [Merge Sort ](Challenges/merge-sort/README.md)
 * [Quick Sort ](Challenges/quicksort/README.md)
-<<<<<<< HEAD
 * [Tree Intersection ](Challenges/tree_intersection/README.md)
-
-=======
 * [Repeated Words ](Challenges/repeatedWord/README.md)
->>>>>>> repeated-word
 
 ### Data Structures
 * [Linked-List](Data-Structures/LinkedList/README.md)
