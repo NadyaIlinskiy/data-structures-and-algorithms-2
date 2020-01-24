@@ -15,6 +15,7 @@
 * [Insertion Sort ](Challenges/insertionSort/README.md)
 * [Merge Sort ](Challenges/merge-sort/README.md)
 * [Quick Sort ](Challenges/quicksort/README.md)
+* [Tree Intersection ](Challenges/tree_intersection/README.md)
 
 
 ### Data Structures
