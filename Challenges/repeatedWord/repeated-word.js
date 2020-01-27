@@ -1,6 +1,7 @@
 'use strict';
 
 const repeatedWord = (string) => {
+  
     if ((typeof string) !== 'string')
     {
         return '';
@@ -38,6 +39,7 @@ const repeatedWord2 = (string) => {
     
     }
 }
+
 
 module.exports = { repeatedWord, repeatedWord2};
 
