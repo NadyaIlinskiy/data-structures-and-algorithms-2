@@ -14,7 +14,7 @@ describe('Hashtable function performs hash, add, get, contains functions', () =>
 
   it('retrieving based on a key returns the value stored', () => {
     let result = hm.get('bat');
-    let expected = { key: 'bat', value: 'flying animal' };
+    let expected = 'flying animal';
     expect(result).toEqual(expected);
   });
   it('Successfully returns null for a key that does not exist in the hashtable', () => {
@@ -22,7 +22,12 @@ describe('Hashtable function performs hash, add, get, contains functions', () =>
     expect(result).toBeFalsy();
   });
 
-
-
+  it('Handle collision if keys are same', () => {
+    hm.add('cat', 'pussy cat');
+    hm.add('cat', 'black cat');
+    let result = hm.get('cat');
+    let expected = 'black cat';
+    expect(result).toEqual(expected);
+  });
 });
 
