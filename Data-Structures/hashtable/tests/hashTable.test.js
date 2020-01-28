@@ -3,7 +3,7 @@
 // Require the module we're testing
 const HashMap = require('../hashTable');
 
-describe('Hashtable function performs hash, add, get, contains functions', () => {
+describe('Hashtable function performs hash, add, get', () => {
   let hm = new HashMap();
 
   it('Adding a key/value to your hashtable results in the value being in the data structure ', () => {
@@ -29,5 +29,29 @@ describe('Hashtable function performs hash, add, get, contains functions', () =>
     let expected = 'black cat';
     expect(result).toEqual(expected);
   });
+
+  it('Get keys', () => {
+    let hm2 = new HashMap();
+    hm2.add('cat', 'Kristi');
+    hm2.add('dog', 'Belka');
+    hm2.add('hog', 'Yogik');
+
+    let result = hm2.keys();
+    let expected = ['hog','dog','cat'];
+
+    expect(result.length).toEqual(expected.length);
+
+    for(let i=0; i<expected.length; i++){
+      let flag = false;
+      for(let j=0; j<result.length; j++){
+        flag = expected[i] === result[j];
+        if(flag){
+          break;
+        }
+      }
+      expect(flag).toBeTruthy();
+    }
+  });
+  
 });
 

@@ -7,15 +7,29 @@ class HashTable {
   }
 
   keys(){
-    let kk = []
-    this.table.forEach(e => {
-      if (e){
-        e.forEach(k => {
-          kk.push(k)
-        })
+    let all_keys = [];
+    for(let j=0; j<this.table.length; j++){
+      let arr = this.table[j];
+      if(arr){
+        for(let i=0; i<arr.length; i++){
+          all_keys.push(arr[i][0]);
+        }
       }
-    })
-    return kk
+    }
+    return all_keys;
+  }
+
+  get_key_value(){
+    let kv = [];
+    for(let j=0; j<this.table.length; j++){
+      let arr = this.table[j];
+      if(arr){
+        for(let i=0; i<arr.length; i++){
+          kv.push(arr[i]);
+        }
+      }
+    }
+    return kv;
   }
 
   hash(string) {
@@ -26,35 +40,61 @@ class HashTable {
       total += H * total + string.charCodeAt(i);
     }
     total %= this.table.length;
-    // if (total < 1) {
-    //   this.table.length - 1;
-    // }
     return parseInt(total);
   }
 
   add(key, value) {
     let ind = this.hash(key);
-    if (this.table[ind]){
-      this.table[ind][key] = value;
-    } else{
-      this.table[ind] = { key: value };
+    let arr = this.table[ind];
+    if (!arr) {
+      this.table[ind] = [[key, value]];
+    } else {
+      let flag = false;
+      for(let i=0; i<arr.length; i++){
+        flag = arr[i][0] === key;
+        if(flag){
+          arr[i][1] = value;
+          break;
+        }
+      }
+      if(!flag){
+        arr.push([key, value]);
+      }
     }
+    // if (this.table[ind]){
+    //   this.table[ind][key] = value;
+    // } else{
+    //   this.table[ind] = { key: value };
+    // }
   }
 
   get(key) {
     let ind = this.hash(key);
-    let value = this.table[ind][key];
-    return value;
+    let arr = this.table[ind];
+    if(arr){
+      for(let i=0; i<arr.length; i++){
+        if (arr[i][0] === key){
+          return arr[i][1];
+        }
+      }
+    }
+    return null;
+    // let value = this.table[ind][key];
+    // return value;
   }
 
   contains(key) {
     let ind = this.hash(key);
-    return this.table[ind] !== null && this.table[ind][key] !== null
-    // if (this.table[ind]) {
-    //   return true;
-    // } else {
-    //   return false;
-    // }
+    let arr = this.table[ind];
+    if(arr){
+      for(let i=0; i<arr.length; i++){
+        if (arr[i][0] === key){
+          return true;
+        }
+      }
+    }
+    return false;
+    //return this.table[ind] !== null && this.table[ind][key] !== null
   }
 
 }
